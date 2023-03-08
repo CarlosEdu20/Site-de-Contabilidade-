@@ -190,7 +190,19 @@ text-align: center;
     padding: 20px 50px 50px 50px;
     
 }
-@media (max-width: 800px){
+
+
+
+@media (max-width: 767px) {
+    .caixa-superior{
+        background-image: url("./Dev.png.png");
+        height: 90vh;
+        width: 75vh;
+        
+    }
+        }
+
+@media (max-width: 851px){
     .caixa-inferior{
         background-color: #10175a;
         font-size: 20px;
@@ -213,7 +225,7 @@ text-align: center;
 .caixa-superior{
     background-image: url("./Dev.png.png");
     height: 90vh;
-    width: 50vh;
+    width: 56vh;
     
     
     }
@@ -246,4 +258,30 @@ text-align: center;
     }
     
 }
+
+
+
+@media (max-width: 915px) {
+    .caixa-superior{
+        background-image: url("./Dev.png.png");
+        height: 90vh;
+        width: 55vh;
+        
+        
+        }
+        .caixa-inferior{
+            background-color: #10175a;
+            font-size: 20px;
+            width: 495px;
+        
+        }
+}
+
+
+
+
+
+
+
+
 

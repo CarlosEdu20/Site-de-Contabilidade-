@@ -33,28 +33,46 @@
 
     <label>
         Nome
-        <input placeholder="digite seu nome completo" />
+        <input id="nome" placeholder="digite seu nome completo" />
     </label>
 
     <label>
         Email
-        <input placeholder="digite seu Email" />
+        <input id= "email" placeholder="digite seu Email" />
     </label>
 
     <label>
-        Whatszapp
-        <input placeholder="digite seu número" />
+        Whatsapp
+        <input id="Whatsapp" placeholder="digite seu número" />
     </label>
 
     <label>
         Fale Conosco
-        <textarea placeholder="digite sua dúvida aqui"></textarea>
+        <textarea id="Fale Conosco"placeholder="digite sua dúvida aqui"></textarea>
     </label>
-    <button>Enviar</button>
+    <button type="button" onclick="enviarEmail()">Enviar</button>
 
 </form>
            
         </div>
+        <script>
+            function enviarEmail(){
+                const nome = document.getElementById('nome').value;
+                const email= document.getElementById('email').value;
+                const Whatsapp= document.getElementById('Whatsapp').value;
+                const FaleCon= document.getElementById('Fale Conosco').value;
+                const corpoEmail = `Nome: ${nome}\nEmail: ${email}\nWhatsapp: ${Whatsapp}\nFale Conosco: ${FaleCon}`;
+                const assunto = 'Contato via formulário do site';
+                const link = `mailto:eduardocarlos3134@gmail.com?subject=${assunto}&body=${encodeURIComponent(corpoEmail)}`;
+        window.location.href = link;
+
+
+            }
+
+
+
+
+        </script>
           
 
 
